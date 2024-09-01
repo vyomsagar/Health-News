@@ -1,0 +1,90 @@
+.header {
+  position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0e2546;
+    color: white;
+    padding: 10px 20px;
+  }
+  
+  .header-L {
+    margin: 0;
+    position: relative;
+  }
+
+  .header-L h1{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 12px;
+  }
+
+  .header-L p{
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    position: absolute;
+    right: 0;
+    /* bottom: 0; */
+  }
+
+  .header nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  
+  .header nav a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    margin-right: 35px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .header nav a .icon{
+    position: relative;
+    display: block;
+    line-height: 75px;
+    font-size: 1.5em;
+    text-align: center;
+    transition: 0.5s;
+}
+
+
+.header nav a .text{
+  position: absolute;
+  font-weight: 400;
+  font-size: 0.80em;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+  .header nav a:hover .icon{
+    transform: translateY(-25px);
+    text-decoration: underline;
+  }
+  
+
+  .header nav a:hover .text{
+    opacity: 1;
+}
+
+
+#siteName{
+  display: flex;
+  align-items: top;
+  justify-content: center;
+  /* padding: 5px; */
+}
+
+#siteName .icon{
+  font-size: 60px;
+  padding: 4px;
+}
